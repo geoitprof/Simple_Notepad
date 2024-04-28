@@ -9,4 +9,6 @@ class Notepad:
         
         self.text_area = scrolledtext.ScrolledText(self.master, undo=True)
         self.text_area.pack(fill=tk.BOTH, expand=1)
- 
+
+        self.menu_bar = tk.Menu(self.master)
+        self.master.config(menu=self.menu_bar)
