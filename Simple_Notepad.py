@@ -21,4 +21,7 @@ class Notepad:
         self.file_menu.add_command(label="Save As...", accelerator="Ctrl+Shift+S", command=self.save_as_file)
         self.file_menu.add_separator()
         self.file_menu.add_command(label="Exit", command=self.exit_editor)
-
+        
+        self.master.bind("<Control-n>", self.new_file)
+        self.master.bind("<Control-o>", self.open_file)
+        self.master.bind("<Control-s>", self.save_file)
