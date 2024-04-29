@@ -16,8 +16,4 @@ class Notepad:
         self.file_menu = tk.Menu(self.menu_bar, tearoff=0)
         self.menu_bar.add_cascade(label="File", menu=self.file_menu)
         self.file_menu.add_command(label="New", accelerator="Ctrl+N", command=self.new_file)
-        self.file_menu.add_command(label="Open...", accelerator="Ctrl+O", command=self.open_file)
-        self.file_menu.add_command(label="Save", accelerator="Ctrl+S", command=self.save_file)
-        self.file_menu.add_command(label="Save As...", accelerator="Ctrl+Shift+S", command=self.save_as_file)
-        self.file_menu.add_separator()
-        self.file_menu.add_command(label="Exit", command=self.exit_editor)
+
