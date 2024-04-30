@@ -28,5 +28,6 @@ class Notepad:
         self.master.bind("<Control-Shift-S>", self.save_as_file)
 
 def new_file(self, event=None):
+    self.text_area.delete(1.0, tk.END)
 
 
