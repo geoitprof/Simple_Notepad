@@ -25,3 +25,6 @@ class Notepad:
         self.master.bind("<Control-n>", self.new_file)
         self.master.bind("<Control-o>", self.open_file)
         self.master.bind("<Control-s>", self.save_file)
+        self.master.bind("<Control-Shift-S>", self.save_as_file)
+
+
