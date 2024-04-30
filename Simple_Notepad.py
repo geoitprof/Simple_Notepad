@@ -27,4 +27,6 @@ class Notepad:
         self.master.bind("<Control-s>", self.save_file)
         self.master.bind("<Control-Shift-S>", self.save_as_file)
 
+def new_file(self, event=None):
+
 
