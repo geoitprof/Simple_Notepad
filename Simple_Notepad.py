@@ -36,5 +36,6 @@ def new_file(self, event=None):
 
     def save_file(self, event=None):
         if self.file_path:
+            content = self.text_area.get(1.0, tk.END)
 
 
