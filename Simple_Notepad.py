@@ -34,4 +34,7 @@ def new_file(self, event=None):
                 self.text_area.insert(tk.END, file.read())
             self.master.title(f"{self.file_path} - Simple Notepad")
 
+    def save_file(self, event=None):
+        if self.file_path:
+
 
