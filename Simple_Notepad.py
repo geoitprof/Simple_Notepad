@@ -39,6 +39,8 @@ def new_file(self, event=None):
             content = self.text_area.get(1.0, tk.END)
             with open(self.file_path, "w") as file:
                 file.write(content)
-                self.master.title(f"{self.file_path} - Simple Notepad")
+            self.master.title(f"{self.file_path} - Simple Notepad")
+        else:
+            self.save_as_file()
 
 
